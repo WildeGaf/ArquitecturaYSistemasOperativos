@@ -1,0 +1,49 @@
+Despues de ver la historia de linux dos veces
+
+openFiler;
+freeNas;
+
+Lista de comandos:
+sudo su-
+apt-get install build-essential linux-headers-$(uname -r)
+rm /var.... 
+cd/carpeta Para moverse;
+cd.. Subir un espacio en raiz;
+reboot reincia el equipo virtual
+ls informa lo q se encuentra en ese directorio, azul carpetas, verde archivos.
+ls -la Muestra todos los archivos, si inician con un punto son ocultos.cd
+
+sobre el lado izquierdo se ven las caracteristicas, si inicia con una d, se trata
+de un directorio,  rwx, read write execute. (si se trata de un directorio, el permiso es para acceder)
+Los otros dos valores se refieren a grupo y usuario;
+stat /bin/ls - Muestra la ultima modificacion del archivo.
+ls -l /bin/ls - Muestra la informacion de un archivo, sus permisos y demas.
+ls -l /etc - Muestra el contenido de los directorios y sus permisos.
+/etc - Muestra los permisos de los directorios.
+cd /proc - Va al directorio... cuando empieza con raiz absoluto.
+			       cuando lo haces redireccionar con.. es relativo
+
+cd 
+
+directorio /proc# 
+Es una carpeta almacenada en memoria ram, donde se listan los procesos que se estan
+ejecutando en tiempo real, con esto es posible finalizar un proceso, darle mas
+procesamiento de datos,etc . Para eso cada proceso esta determinado por un numero
+el cual lo identifica y es el utilizado para administrar los mismos.
+Para acceder a la informacion de cada proceso se utiliza el comando "cd".
+Por ejemplo cd 123 -> brinda informacion del proceso 123.
+cat cmdline -> brinda informacion del primer proceso.
+cat cpuinfo -> brinda informacion del cpu (hardware)
+
+flags de un procesador: Estas banderas dan informacion para determinar si un proceso es compatible con dicho procesador.
+
+cat meminfo -> da informacion sobre el uso de la memoria ram.(memoria total,mem libre,etc).
+wathc cat meminfo -> cada cierto tiempo refresca la informacion.
+cat version -> da informacion del kernel, el compilador utilizado. SMP = multi procesamiento.
+cat cpu info -> informacion sobre el cpu.
+
+less^Cpuinfo (Creo q da informacion pero de forma pausada).
+more^Cpuinfo (da mas informacion(? no estoy seguro, y creo q lo hace sin pausar).
+
+
+
